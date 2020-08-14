@@ -1,6 +1,6 @@
 html{font-size: 62.5%;}
 body{
-    min-width: 576px;
+    /* min-width: 576px; */
 }
 
 /* General Settings */
@@ -199,6 +199,120 @@ a:focus, a:hover{text-decoration: none!important;}
     position: relative;
     margin-left: 10%;
 }
+
+/* page5 */
+#page5{
+    padding-top:5%;
+    padding-bottom: 60%;
+}
+
+#p5t1{
+    position: relative;
+    left: 12%;
+    font-size: 4vw;
+}
+#p5t2{
+    position: absolute;
+    left: 50%;
+    top:17%;
+    transform: translateX(-50%);
+    font-size: 4vw;
+    font-weight: 1000;
+}
+
+#curri-table{
+    position: absolute;
+    width:50%;
+    height:12%;
+    padding-top: 30%;
+    top:25%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.circle{
+    position: absolute;
+    text-align: center;
+    border-radius: 100%;
+    background-color: blue;
+    width:16%;
+    height: 23%;
+    line-height: 1.2;
+    box-shadow: 3px 3px 10px gray;
+    top:36%;
+    transition: .2s;
+    cursor: pointer;
+}
+.circle:hover{
+    background-color:rgb(49, 136, 250);
+}
+.circle:focus{outline:none;}
+#cir1{left:17%;}
+#cir2{left:67%;}
+.cir-txt-big{font-size: 4.3vw;color:white;white-space:nowrap;}
+.cir-txt-small{font-size: 2vw;color:rgb(204, 204, 204); letter-spacing: -2px;white-space:nowrap;}
+
+#speech-bubble3 {
+    position: absolute;
+    display: inline;
+    background: rgb(218, 216, 216);
+    border-radius: .4em;
+    width: 66%;
+    height:22%;
+    top:67%;
+    left: 18%;
+    box-shadow: 3px 3px 10px gray;
+}
+
+#speech-bubble3:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 11%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-bottom-color: rgb(218, 216, 216);
+	border-top: 0;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+#speech-bubble4 {
+    position: absolute;
+    display: none;
+    background: rgb(218, 216, 216);
+    border-radius: .4em;
+    width: 66%;
+    height:22%;
+    top:67%;
+    left: 18%;
+    box-shadow: 3px 3px 10px gray;
+}
+
+#speech-bubble4:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 87%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-bottom-color: rgb(218, 216, 216);
+	border-top: 0;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+
+
+/* page6 */
+#p6t1{
+    position: relative;
+    left: 12%;
+    font-size: 4vw;
+}
+
+
+
 
 /* accordion */
 .bs-accordion .panel-heading {

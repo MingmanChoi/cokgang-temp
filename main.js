@@ -26,4 +26,30 @@ window.onload = ()=>{
         detailTitle.style.display = 'inline';
         hy.style.filter = 'brightness(100%)';
     })
+
+
+    // curriculum button
+    var cir1 = document.querySelector('#cir1');
+    var cir2 = document.querySelector('#cir2');
+    var speechBubble3 = document.querySelector('#speech-bubble3');
+    var speechBubble4 = document.querySelector('#speech-bubble4');
+
+    cir1.addEventListener('click',()=>{
+        var open3 = speechBubble3.style.display;
+        if(open3 !== 'none'){
+            speechBubble3.style.display = 'none';
+        }else{
+            speechBubble3.style.display = 'inline';
+            speechBubble4.style.display = 'none';
+        }
+    });
+    cir2.addEventListener('click',()=>{
+        var open4 = speechBubble4.style.display;
+        if(open4 === 'inline'){
+            speechBubble4.style.display = 'none';
+        }else{
+            speechBubble4.style.display = 'inline';
+            speechBubble3.style.display = 'none';
+        }
+    });
 }
