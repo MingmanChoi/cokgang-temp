@@ -7,9 +7,9 @@ window.onload = ()=>{
     var jm_detail = document.querySelector('#detail2');
 
     hy.addEventListener('mouseover',()=>{
-        hy_detail.style.display = 'inline';
         detailTitle.style.display = 'none';
         jm.style.filter = 'brightness(50%)';
+        hy_detail.style.display = 'inline';
     })
     hy.addEventListener('mouseout',()=>{
         hy_detail.style.display = 'none';

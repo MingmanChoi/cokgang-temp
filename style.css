@@ -1,7 +1,4 @@
 html{font-size: 62.5%;}
-body{
-    /* min-width: 576px; */
-}
 
 /* General Settings */
 .mg-lr{
@@ -30,33 +27,35 @@ body{
 #fixed-banner{
     position: fixed;
     top: 30%;
-    right:20px;
+    right:10px;
     width:100px;
-    height: 200px;
+    height: 220px;
+    font-weight: 700;
+    box-shadow: 2px 2px gray;
 }
 
 .btn-banner{
     text-align: center;
-    border: 1px solid black;
     cursor: pointer;
-    background-color: white;
 }
+#enroll-banner:hover,#signup-banner:hover{background-color: rgb(172, 172, 172);}
 
 #enroll-banner{
     position: relative;
-    height:33%;
+    height:31%;
     padding-top:1px;
+    background-color: whitesmoke;
 }
 #enroll-banner > div{
     padding-top: 8px;
 }
+#sugang{font-size: 19px;}
 #signup-banner{
     position: relative;
-    height:17%;
+    height:19%;
     font-size: 19px;
-}
-#signup-banner{
-    padding-top: 8px;
+    padding-top: 6px;
+    background-color: beige;
 }
 #ktalk-banner{
     position: relative;
@@ -147,8 +146,6 @@ a:focus, a:hover{text-decoration: none!important;}
 
 .details{
     position: absolute;
-    border:1px solid black;
-    left:35%;
     top: 10%;
 }
 #detail0{
@@ -159,20 +156,55 @@ a:focus, a:hover{text-decoration: none!important;}
     transform: translateX(-50%);
 }
 #detail1, #detail2{display: none;}
-
-#detail1{
-    width:40%;
-    padding-bottom: 33%;
-    left:45%;
-    background-color: beige;
-    background-repeat: no-repeat;
+.speech-bubble1 {
+    position: absolute;
+    background: rgb(231, 231, 231);
+    border-radius: .4em;
+    width: 46%;
+    height:73%;
+    top:9%;
+    left: 39%;
+    box-shadow: 3px 3px 10px gray;
 }
-#detail2{
-    width:40%;
-    padding-bottom: 33%;
-    left:15%;
-    background-color: beige;
-    background-repeat: no-repeat;
+
+.speech-bubble1:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	width: 0;
+	height: 0;
+	border: 40px solid transparent;
+	border-right-color: rgb(231, 231, 231);
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -20px;
+	margin-left: -40px;
+}
+.speech-bubble2 {
+    position: absolute;
+    background: rgb(231, 231, 231);
+    border-radius: .4em;
+    width: 46%;
+    height:73%;
+    top:9%;
+    left: 18%;
+    box-shadow: 3px 3px 10px gray;
+}
+
+.speech-bubble2:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 40px solid transparent;
+	border-left-color: rgb(231, 231, 231);
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -20px;
+	margin-right: -40px;
 }
 
 /* page4 */
@@ -254,7 +286,6 @@ a:focus, a:hover{text-decoration: none!important;}
 
 #speech-bubble3 {
     position: absolute;
-    display: inline;
     background: rgb(218, 216, 216);
     border-radius: .4em;
     width: 66%;
@@ -305,15 +336,51 @@ a:focus, a:hover{text-decoration: none!important;}
 
 
 /* page6 */
+#page6{
+    padding-bottom: 50%;
+    background-color: rgb(89, 89, 230);
+}
 #p6t1{
     position: relative;
     left: 12%;
+    color:white;
     font-size: 4vw;
 }
-
-
-
-
+#faq_content{
+    position: absolute;
+    width:60%;
+    height: 60%;
+    left:20%;
+    top: 30%;
+}
+#faqcontent1{
+    position: relative;
+    width:100%;
+    height:10%;
+}
+#faqcontent2{
+    position: relative;
+    height:90%;
+    border-radius: 6%;
+    background-color: white;
+    padding:2% 4%;
+}
+.faqtab{
+    position: relative;
+    margin-left: 2%;
+    font-size: 2vw;
+    color:rgb(209, 209, 209);
+    cursor: pointer;
+}
+.faqtab:hover{color:white;}
+#faqtitle{
+    position: relative;
+    font-weight: 1000;
+    font-size: 2.7vw;
+}
+#faqtext{
+    padding-top: 2%;
+}
 /* accordion */
 .bs-accordion .panel-heading {
     padding: 0;
