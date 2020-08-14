@@ -1,0 +1,129 @@
+html{font-size: 10px;}
+body{
+    min-width: 576px;
+}
+#page1{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.mg-lr{
+    width: 100%;
+    margin-left: 0%;
+    border:1px solid black;
+    padding: 30px;
+    position: relative;
+    min-height: 308px;
+    /* min-height: 900px; */
+    overflow: hidden;
+}
+
+#fixed-banner{
+    position: fixed;
+    top: 30%;
+    right:20px;
+    width:100px;
+    height: 200px;
+}
+
+/* side banner */
+.btn-banner{
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: white;
+}
+
+#enroll-banner{
+    position: relative;
+    height:33%;
+    padding-top:1px;
+}
+#enroll-banner > div{
+    padding-top: 8px;
+}
+#signup-banner{
+    position: relative;
+    height:17%;
+    font-size: 19px;
+}
+#signup-banner{
+    padding-top: 8px;
+}
+#ktalk-banner{
+    position: relative;
+    height:50%;
+}
+
+
+/* Intro */
+
+h3[data-toggle="collapse"]{
+    cursor: pointer;
+}
+
+
+
+/* Tutor */
+#page3{
+    padding: 0;
+}
+.tutor_area{
+    /* max-width:50%; */
+    width: 49%;
+    border:1px solid black;
+    display: inline-block;
+}
+#tutor1{
+    position: relative;
+}
+#tutor2{
+    position: relative;
+    left:16%;
+    transition: 0.3s;
+}
+#tutor2:hover{left:0%;}
+.tutor{
+    width:100%;
+    position: relative;
+}
+
+#hytutor{
+    margin-left: -40%;
+    transition:0.3s;
+    transform: scale(0.9);
+}
+#hytutor:hover{
+    margin-left: -5%;
+    transform: scale(1.0);
+}
+#jmtutor{
+    transform: scale(1.1);
+    transition:0.3s;
+}
+#jmtutor:hover{
+    transform: scale(1.2);
+}
+
+.details{
+    position: absolute;
+    border:1px solid black;
+    left:35%;
+    top: 10%;
+}
+#detail0{text-align: center;}
+#detail1, #detail2{display: none;}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    /* #fixed-banner{
+        position: fixed;
+        top: 30%;
+        right:10px;
+        width:150px;
+        height: 300px;
+    } */
+  }
