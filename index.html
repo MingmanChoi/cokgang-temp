@@ -2,170 +2,204 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
 </head>
 
 <body>
-    <div id="page1" class="mg-lr">
-        <div id="p1t1">완벽한 학교생활을 위한 혁신적인 인강.</div>
-        <div id="p1t2">바로 지금 여기에.</div>
-        <div id="p1t3">Cokgang 런칭</div>
-    </div>
-    <div id="page2" class="mg-lr">
-            <div id="p2t1">전에 없던 인강, Cokgang</div>
-            <article class="panel-group bs-accordion" id="intro_content" role="tablist" aria-multiselectable="true">
+  <div id="page1" class="mg-lr">
+    <img style="width:100%;" src="./img/page1.png" alt="">
+  </div>
+  <div id="page2" class="mg-lr">
+    <div id="p2t1">전에 없던 인강, Cokgang</div>
+    <article class="panel-group bs-accordion" id="intro_content" role="tablist" aria-multiselectable="true">
 
-                <section class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingOne">
+      <section class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#intro_content" href="#intro1" aria-expanded="true"
+              aria-controls="intro1">
+              Cokgang이 뭐야?
+              <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
+            </a>
+          </h4>
+        </div>
+        <div id="intro1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quisquam exercitationem dolores
+              ducimus obcaecati itaque, veniam iusto distinctio enim, temporibus sit maiores reiciendis? Voluptatibus
+              velit consequuntur, iusto eaque fugiat repudiandae. </p>
+          </div>
+        </div>
+      </section>
+      <!-- End off accordion item-1 -->
+
+      <section class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#intro_content" href="#intro3" aria-expanded="true"
+              aria-controls="intro3">
+              Cokgang은 이투스, 메가스터디랑 어떻게 달라?
+              <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
+            </a>
+          </h4>
+        </div>
+        <div id="intro3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quisquam exercitationem dolores
+              ducimus obcaecati itaque, veniam iusto distinctio enim, temporibus sit maiores reiciendis? Voluptatibus
+              velit consequuntur, iusto eaque fugiat repudiandae. </p>
+          </div>
+        </div>
+      </section>
+      <!-- End off accordion item-3 -->
+
+      <section class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFour">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#intro_content" href="#intro4" aria-expanded="true"
+              aria-controls="intro4">
+              Cokgang은 어떻게 볼 수 있어?
+              <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
+            </a>
+          </h4>
+        </div>
+        <div id="intro4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+          <div class="panel-body">
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quisquam exercitationem dolores
+              ducimus obcaecati itaque, veniam iusto distinctio enim, temporibus sit maiores reiciendis? Voluptatibus
+              velit consequuntur, iusto eaque fugiat repudiandae. </p>
+          </div>
+        </div>
+      </section>
+      <!-- End off accordion item-4 -->
+  </div>
+  </div>
+  <div id="page3" class="mg-lr">
+    <div id="tutor1" class="tutor_area">
+      <img id="hytutor" class="tutor" src="./img/hy.png" alt="">
+    </div>
+    <div id="tutor2" class="tutor_area">
+      <img id="jmtutor" class="tutor" src="./img/jm.png" alt="">
+    </div>
+    <div id="detail0" class="details">
+      완벽한 Cokgang을 위한<br>스페-샬 튜터
+    </div>
+    <div id="detail1" class="details speech-bubble1">
+      <div>Tutor <span>정현영</span></div>
+      <div>약력 : 성균관대학교 컴퓨터공학과 학사</div>
+      <div>특기 : 태양권 쏘며 인수분해</div>
+      <div>포부 : 열심히 하겠습니다.</div>
+    </div>
+    <div id="detail2" class="details speech-bubble2">
+      <div>Tutor <span>윤정민</span></div>
+      <div>약력 : 성균관대학교 물리학과 학사</div>
+      <div>특기 : 태양권 쏘며 작도</div>
+      <div>포부 : 열심히 하겠습니다.</div>
+    </div>
+  </div>
+  <div id="page4" class="mg-lr">
+    <div id="p4t1">자칭 1타 강사 정쌤의 꿀잼 모먼트 미리보기</div>
+    <div class="content">
+      <iframe id="ytubevideo1" src="https://www.youtube.com/embed/ZW9IyXZK73g" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div id="page5" class="mg-lr">
+    <img style="width:100%;" src="./img/page5.png" alt="">
+  </div>
+  <div id="page6" class="mg-lr">
+    <div id="p6t1">FAQ / 공지사항</div>
+    <div id="faq_content">
+      <div id="faqcontent1">
+        <div id="faq1" class="faqtab">공지사항</div>
+        <div id="faq2" class="faqtab">신청하기</div>
+        <div id="faq3" class="faqtab">환불규정</div>
+        <div id="faq4" class="faqtab">강의 진행</div>
+        <div id="faq5" class="faqtab">1:1 상담</div>
+      </div>
+      <div id="faqcontent2">
+        <div id="faqtitle">공지사항</div>
+        <div id="faqtext">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
                     <h4 class="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#intro_content" href="#intro1" aria-expanded="true" aria-controls="intro1">
-                        Cokgang이 뭐야?
-                        <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
-                      </a>
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                            Collapsible Group Item #1
+                        </a>
                     </h4>
-                  </div>
-                  <div id="intro1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
-                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quisquam exercitationem dolores ducimus obcaecati itaque, veniam iusto distinctio enim, temporibus sit maiores reiciendis? Voluptatibus velit consequuntur, iusto eaque fugiat repudiandae. </p>
+                          hjk,
                     </div>
-                  </div>
-                </section>
-                <!-- End off accordion item-1 -->
-
-                <section class="panel panel-default">
-                  <div class="panel-heading" role="tab" id="headingTwo">
+                </div>
+            </div>
+    
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
                     <h4 class="panel-title">
-                      <a role="button" data-toggle="collapse" data-parent="#intro_content" href="#intro2" aria-expanded="true" aria-controls="intro2">
-                        무엇을 Cok 찍고 어떻게 Gang의 해줘?
-                        <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
-                      </a>
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                            Collapsible Group Item #2
+                        </a>
                     </h4>
-                  </div>
-                  <div id="intro2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="panel-body">
-                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quisquam exercitationem dolores ducimus obcaecati itaque, veniam iusto distinctio enim, temporibus sit maiores reiciendis? Voluptatibus velit consequuntur, iusto eaque fugiat repudiandae. </p>
+                        vegan excepteur butcher vice lomo. Leggings occaecat craf't heard of them accusamus labore sustainable VHS.
                     </div>
-                  </div>
-                </section>
-                <!-- End off accordion item-2 -->
-
-                <section class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                      <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#intro_content" href="#intro3" aria-expanded="true" aria-controls="intro3">
-                            Cokgang은 이투스, 메가스터디랑 어떻게 달라?
-                          <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
+                </div>
+            </div>
+    
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="more-less glyphicon glyphicon-plus"></i>
+                            Collapsible Group Item #3
                         </a>
-                      </h4>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                       bly haven't heard of them accusamus labore sustainable VHS.
                     </div>
-                    <div id="intro3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                      <div class="panel-body">
-                          <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quisquam exercitationem dolores ducimus obcaecati itaque, veniam iusto distinctio enim, temporibus sit maiores reiciendis? Voluptatibus velit consequuntur, iusto eaque fugiat repudiandae. </p>
-                      </div>
-                    </div>
-                  </section>
-                <!-- End off accordion item-3 -->
-
-                <section class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingFour">
-                      <h4 class="panel-title">
-                        <a role="button" data-toggle="collapse" data-parent="#intro_content" href="#intro4" aria-expanded="true" aria-controls="intro4">
-                            Cokgang은 어떻게 볼 수 있어?
-                          <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="intro4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                      <div class="panel-body">
-                          <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quisquam exercitationem dolores ducimus obcaecati itaque, veniam iusto distinctio enim, temporibus sit maiores reiciendis? Voluptatibus velit consequuntur, iusto eaque fugiat repudiandae. </p>
-                      </div>
-                    </div>
-                  </section>
-                <!-- End off accordion item-4 -->
+                </div>
             </div>
+    
+        </div>
+        </div>
+      </div>
     </div>
-    <div id="page3" class="mg-lr">
-        <div id="tutor1" class="tutor_area">
-            <img id="hytutor" class="tutor" src="./img/hy.png" alt="">
-        </div>
-        <div id="tutor2" class="tutor_area">
-            <img id="jmtutor" class="tutor" src="./img/jm.png" alt="">
-        </div>
-        <div id="detail0" class="details">
-            완벽한 Cokgang을 위한<br>스페-샬 튜터
-        </div>
-        <div id="detail1" class="details speech-bubble1">
-            <div>Tutor <span>정현영</span></div>
-            <div>약력 : 성균관대학교 컴퓨터공학과 학사</div>
-            <div>특기 : 태양권 쏘며 인수분해</div>
-            <div>포부 : 열심히 하겠습니다.</div>
-        </div>
-        <div id="detail2" class="details speech-bubble2">
-            <div>Tutor <span>윤정민</span></div>
-            <div>약력 : 성균관대학교 물리학과 학사</div>
-            <div>특기 : 태양권 쏘며 작도</div>
-            <div>포부 : 열심히 하겠습니다.</div>
-        </div>
-    </div>
-    <div id="page4" class="mg-lr">
-        <div id="p4t1">자칭 1타 강사 정쌤의 꿀잼 모먼트 미리보기</div>         
-        <div class="content">
-            <iframe id="ytubevideo1" src="https://www.youtube.com/embed/ZW9IyXZK73g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-    <div id="page5" class="mg-lr">
-        <div id="p5t1"><b>Cokgang</b>만의 알.잘.딱.깔.센 <b>커리큐울-럼</b></div>
-        <div id="p5t2">Cokgang</div>
-        <table id="curri-table">
-            <tr>
-                <td style="border-right: 2px solid gray;">&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td colspan="2" style="border-right: 2px solid gray;border-left: 2px solid gray;border-top: 2px solid gray;">&nbsp;</td>
-            </tr>
-        </table>
-        <button id="cir1" class="circle"><span class="cir-txt-big">콕강</span><br><span class="cir-txt-small">(개념강의)</span></button>
-        <button id="cir2" class="circle"><span class="cir-txt-big">우기뽀</span><br><span class="cir-txt-small">(문제 풀이 강의)</span></button>
-        <div id="speech-bubble3"><span>콕강은 콕 집어주는 강의입니다.</span></div>
-        <div id="speech-bubble4"><span>우기뽀는 우리학교 기출문제입니다.</span></div>
-    </div>
-    <div id="page6" class="mg-lr">
-        <div id="p6t1">FAQ / 공지사항</div>
-        <div id="faq_content">
-            <div id="faqcontent1">
-                <span id="faq1" class="faqtab">공지사항</span>
-                <span id="faq2" class="faqtab">신청</span>
-                <span id="faq3" class="faqtab">환불</span>
-                <span id="faq4" class="faqtab">강의 진행</span>
-                <span id="faq5" class="faqtab">1:1 상담</span>
-            </div>
-            <div id="faqcontent2">
-                <div id="faqtitle">공지사항</div>
-                <div id="faqtext">공지사항 내용을 넣어주세요.</div>
-            </div>
-        </div>
-    </div>
+  </div>
+  <div id="page7" class="mg-lr">
+    <img style="width:100%;" src="./img/page7.png" alt="">
+  </div>
 
 
-    <div id="fixed-banner">
-        <div class="btn-banner" id="enroll-banner">
-            <div><span id="sugang">수강신청</span><br>
-            <span id="baro">바로가기</span></div>
-        </div>
-        <div class="btn-banner" id="signup-banner">회원가입</div>
-        <div class="btn-banner" id="ktalk-banner"><img src="./img/kakaotalk_banner.PNG" style="width:100%;height:100%;"></div>
+  <div id="fixed-banner">
+    <div class="btn-banner" id="enroll-banner">
+      <div><span id="sugang">수강신청</span><br>
+        <span id="baro">바로가기</span></div>
     </div>
+    <div class="btn-banner" id="signup-banner">회원가입</div>
+    <div class="btn-banner" id="ktalk-banner"><img src="./img/kakaotalk_banner.PNG" style="width:100%;height:100%;">
+    </div>
+  </div>
 
 </body>
 
