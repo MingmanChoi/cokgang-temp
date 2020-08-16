@@ -12,6 +12,20 @@ window.onload = ()=>{
     ktalk.addEventListener('click',()=>{
         window.open('http://pf.kakao.com/_xlbuyxb/chat','_blank');
     })
+    
+     /* To the Top Button & Scroll */
+     $( window ).scroll( function() {
+    	if ( $( this ).scrollTop() > 200 ) {
+             $( '#toTop' ).fadeIn();
+    	} else {
+		$( '#toTop' ).fadeOut();
+	}
+    } );
+    $( '#toTop' ).click( function() {
+	$( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+	return false;
+    } );
+
     // tutor mouseover effect
     var hy = document.querySelector('#hytutor');
     var jm = document.querySelector('#jmtutor');

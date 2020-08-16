@@ -58,7 +58,7 @@ html{font-size: 62.5%;}
     cursor: pointer;
 }
 #enroll-banner:hover,#signup-banner:hover{background-color: rgb(172, 172, 172);}
-
+#ktalk-banner:hover{filter:brightness(105%);}
 #enroll-banner{
     position: relative;
     height:31%;
@@ -307,10 +307,10 @@ a:focus, a:hover{text-decoration: none!important;}
 #faq_content{
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    width:80%;
+    grid-template-columns: 2fr 5fr;
+    width:90%;
     height: 60%;
-    left:9%;
+    left:2%;
     margin-top:5%;
 }
 #faqcontent1{
@@ -404,9 +404,21 @@ button.faqtab{background-color: transparent;border:0;outline:0;}
   .panel-default > .panel-heading + .panel-collapse > .panel-body {
     border-top-color: #EEEEEE;
   }
-  /* 참고 .collapse div p, .collapsing{font-size:1.5vw;} */
   .collapse div.panel-body, .collapsing div.panel-body{font-size:1.3vw;}
 
+  /* top button */
+#toTop{
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    cursor:pointer;
+    display: none;
+    animation: sizeToggle 1s ease-in-out infinite 0s;
+}
+#toTop:hover{
+    color: gray;
+    transform: scale(1.1);
+}
 
 /* media query */
 @media only screen and (max-width: 768px) {
