@@ -17,10 +17,8 @@ window.onload = ()=>{
      $( window ).scroll( function() {
     	if ( $( this ).scrollTop() > 200 ) {
              $( '#toTop' ).fadeIn();
-             $('#fixed-banner').fadeIn();
     	} else {
 		$( '#toTop' ).fadeOut();
-		$( '#fixed-banner' ).fadeOut();
 	}
     } );
     $( '#toTop' ).click( function() {
@@ -78,21 +76,23 @@ window.onload = ()=>{
             $('#detail-sub').css('-webkit-animation','none');
         }
     });
-//     animation: blink-animation .6s steps(3, start) infinite alternate;
-//    -webkit-animation: blink-animation .6s steps(3, start) infinite alternate;
 
     // 기존 css에서 플로팅 배너 위치(top)값을 가져와 저장한다.
 	var floatPosition = parseInt($("#fixed-banner").css('top'));
 
 	$(window).scroll(function() {
 		// 현재 스크롤 위치를 가져온다.
-		var scrollTop = $(window).scrollTop();
-		var newPosition = scrollTop + floatPosition + "px";
-
+        var scrollTop = $(window).scrollTop();
+        var newPosition;
+        if(scrollTop<200){
+            newPosition = '100px';
+        } else{
+		newPosition = scrollTop + floatPosition + "px";
+        }
 
 		$("#fixed-banner").stop().animate({
 			"top" : newPosition
-		}, 300);
+		}, 200);
 
     }).scroll();
     
