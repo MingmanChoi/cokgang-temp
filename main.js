@@ -17,8 +17,10 @@ window.onload = ()=>{
      $( window ).scroll( function() {
     	if ( $( this ).scrollTop() > 200 ) {
              $( '#toTop' ).fadeIn();
+             $('#fixed-banner').fadeIn();
     	} else {
 		$( '#toTop' ).fadeOut();
+		$( '#fixed-banner' ).fadeOut();
 	}
     } );
     $( '#toTop' ).click( function() {
