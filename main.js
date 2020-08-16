@@ -32,27 +32,52 @@ window.onload = ()=>{
     var detailTitle = document.querySelector('#detail0');
     var hy_detail = document.querySelector('#detail1');
     var jm_detail = document.querySelector('#detail2');
-
-    hy.addEventListener('mouseover',()=>{
-        detailTitle.style.display = 'none';
-        jm.style.filter = 'brightness(50%)';
-        hy_detail.style.display = 'inline';
-    })
-    hy.addEventListener('mouseout',()=>{
-        hy_detail.style.display = 'none';
-        detailTitle.style.display = 'inline';
-        jm.style.filter = 'brightness(100%)';
-    })
-    jm.addEventListener('mouseover',()=>{
-        jm_detail.style.display = 'inline';
-        detailTitle.style.display = 'none';
-        hy.style.filter = 'brightness(50%)';
-    })
-    jm.addEventListener('mouseout',()=>{
-        jm_detail.style.display = 'none';
-        detailTitle.style.display = 'inline';
-        hy.style.filter = 'brightness(100%)';
-    })
+    $('#hytutor').on({
+        'mouseover': function () {
+            this.style.marginLeft = '-5%';
+            detailTitle.style.display = 'none';
+            jm.style.filter = 'brightness(50%)';
+            timer = setTimeout(function () {
+                hy_detail.style.display = 'inline';
+            }, 1000);
+        },
+        'mouseout' : function () {
+            this.style.marginLeft = '-40%';
+            detailTitle.style.display = 'inline';
+            jm.style.filter = 'brightness(100%)';
+            clearTimeout(timer);
+            hy_detail.style.display = 'none';
+        }
+    });
+    $('#jmtutor').on({
+        'mouseover': function () {
+            this.style.marginLeft = '-30%';
+            detailTitle.style.display = 'none';
+            hy.style.filter = 'brightness(50%)';
+            timer = setTimeout(function () {
+                jm_detail.style.display = 'inline';
+            }, 1000);
+        },
+        'mouseout' : function () {
+            this.style.marginLeft = '0%';
+            detailTitle.style.display = 'inline';
+            hy.style.filter = 'brightness(100%)';
+            clearTimeout(timer);
+            jm_detail.style.display = 'none';
+        }
+    });
+    $('#page3').on({
+        'mouseover': function () {
+            $('#detail-sub').css('animation','blink-animation .6s steps(3, start) infinite alternate');
+            $('#detail-sub').css('-webkit-animation','blink-animation .6s steps(3, start) infinite alternate');
+        },
+        'mouseout' : function () {
+            $('#detail-sub').css('animation','none');
+            $('#detail-sub').css('-webkit-animation','none');
+        }
+    });
+//     animation: blink-animation .6s steps(3, start) infinite alternate;
+//    -webkit-animation: blink-animation .6s steps(3, start) infinite alternate;
 
     // 기존 css에서 플로팅 배너 위치(top)값을 가져와 저장한다.
 	var floatPosition = parseInt($("#fixed-banner").css('top'));
@@ -96,7 +121,7 @@ window.onload = ()=>{
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
-                      콕강의 더 넓은 확장성을 위하여 “콕강”에서 “하자공”으로 상호명을 업그레이드 중에 있습니다. 또한, 더 나은 서비스 제공을 위한 대규모 웹사이트 업데이트가 예정되어 있으니, 많은 기대바랍니다.
+                      더 넓은 확장성을 위하여 <span class="red">“콕강”</span>에서 <span class="blue">“하자공”</span>으로 상호명을 업그레이드 중이에요. 이 뿐만이 아니라 더 나은 서비스 품질을 위해 <span class="blue">대규모 웹사이트 수정</span>도 예정되어 있으니, 기대해도 좋아요 :)
                     </div>
                 </div>
             </div>
@@ -112,12 +137,13 @@ window.onload = ()=>{
                 </div>
                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="panel-body">
-                      여러분의 성원에 힘입어 콕강의 베타 테스트 최종(2차) 런칭하였습니다!<br>
-                      추가된 강좌:
+                      여러분의 성원에 힘입어 <span class="blue">콕강의 베타 테스트 최종(2차)</span> 런칭했습니다!<br>
+                      추가된 강좌는 다음과 같아요.
                       <ul>
                         <li>고1: 원의 방정식, 도형의 이동</li>
                         <li>고2: 수학적 귀납법, 원순열 & 이항정리, 조건부확률 & 독립시행확률</li>
                       </ul>
+                      이번 강의엔 어떤 꿀잼요소가 숨어있을지, 직접 확인해보세요!
                     </div>
                 </div>
             </div>
@@ -133,7 +159,7 @@ window.onload = ()=>{
                 </div>
                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                     <div class="panel-body">
-                      콕강의 베타 테스트 1차 런칭이 완료되었습니다! 수강신청 하신 강좌가 추가되었으니 함께 들으러 갈까요?
+                      콕강의 <span class="blue">베타 테스트 1차 런칭</span>이 완료되었습니다! 수강신청 하신 강좌가 추가되었으니 함께 들으러 갈까요?
                       <ul>
                         <li>고1: 여러가지 방정식, 부등식, 좌표평면, 직선의 방정식</li>
                         <li>고2: 삼각함수와 그래프, 삼각함수의 활용, 등차 등비수열, 수열의합</li>
@@ -143,29 +169,30 @@ window.onload = ()=>{
             </div>
           </div>`],
       ['신청하기',`
-      신청방법 : [회원가입] - [수강신청] - [결제] - [강의배정] - [수강]<br><br>
-      <ul>
-        <li>우측 배너에 있는 회원가입 버튼을 통해 회원가입을 해주세요.</li>
-        <li>우측 배너에 있는 수강신청 버튼을 통해 수강신청을 해주세요.</li>
-        <li>수강신청 중에 선택하신 결제 방식으로 결제를 해주세요.<br>
-        (카카오페이일 경우 영업시간 09:00~18:00 내에 확인 후 수강료 
-        청구 메세지 보내드리면 납부 가능합니다)</li>
-        <li>배정이 완료되었다는 문자와 함께 강의안이 발송되며, 본격적으로 수강이 가능합니다.</li>
-      </ul>
+      <div class="faq-question">Q.수강신청을 하려면 어떻게 해야하나요?</div>
+      <div class="faq-answer">A. 오른쪽 배너에 회원가입 버튼 클릭!<br>회원가입을 진행해주세요.<br>
+      회원가입을 마친 후 수강신청을 진행해주시면 돼요 :)</div><br>
+      <div class="faq-question">Q.결제는 어떻게 하나요?</div>
+      <div class="faq-answer">A. 수강신청 마지막에 결제 방법을 선택!<br>
+      <span class="blue">무통장입금</span>일 경우 안내된 계좌로 이체해주세요.<br><br>
+      <span class="blue">카카오페이 결제</span>의 경우 영업시간 평일 11:00~20:00 내에 수강료 청구 메세지를 발송해드릴게요.</div>
       `],
-      ['환불규정',`온라인 모의고사 패키지의 취소 및 환불은 결제일로부터 7일 이내에 응시이력 및 시험지 
-      출력 이력이 없는 경우에 한해 신청 가능합니다.<br><br>
-      7일 이후 또는 모의고사 응시이력 및 시험지 출력 이력이 있는 경우에는 환불 규정에 따라 모의고사 응시료를 공제한 후 부분 환불이 가능하며, 할인 상품은 할인 전 회차별 금액을 차감하고 환불됩니다.
+      ['환불규정',`온라인 모의고사 패키지의 취소 및 환불은 <span class="blue">결제일로부터 7일 이내에 응시이력 및 시험지 출력 이력이 없는 경우</span>에 한해 신청 가능합니다.<br><br>
+      결제일로부터 7일 이후 또는 모의고사 응시이력 및 시험지 출력 이력이 있는 경우에는 환불 규정에 따라 <span class="red">모의고사 응시료를 공제한 후 부분 환불</span>이 가능하며, <span class="red">할인 상품은 할인 전 회차별 금액을 차감</span>하고 환불됩니다.
       <br><br><br><br>
-      * 취소 및 환불관련 내용은 고객센터(02-3489-9500)로 문의해주시기 바랍니다. `],
+      * 취소 및 환불관련 내용은 <b>고객센터(02-3489-9500)</b>로 문의해주시기 바랍니다. `],
       ['강의 수강',`
-      강의 진행은 로그인을 하신 후 “내 강의”에 신청하신 강의 수강이 가능합니다.<br><br>
-      [콕강] → [우기뽀(기출 유형 문제) 풀이연습] → [우기뽀 해설강의]<br><br>
-      수강신청 후 수강 배정 받으신 날 기준 다음날까지 기출유형 연습문제가 제공되며, 풀이 연습을 마치시면 우기뽀(기출유형 문제풀이) 강의를 이어서 수강하시면 됩니다.
+      <div class="faq-question">Q.강의를 수강하려면 어떻게 해야하나요?</div>
+      <div class="faq-answer">A. 결제가 완료된 강의는 로그인을 하신 후 [내강의]에서 수강할 수 있어요.</div>
+      <div class="blue" style="font-size:1.8vw;font-weight:700;margin-top:2%;">권장 학습순서</div>
+      <div class="faq-answer red" style="margin-top:0;">
+      [콕강] → [기출유형 문제(우기뽀) 연습] → [우기뽀 해설강의]</div><br>
+      <div class="faq-question">Q.기출유형문제는 언제 받나요?</div>
+      <div class="faq-answer">A. 수강신청 후 수강배정 받은 다음날 구글폼에 제출하신 이메일로 연습문제 자료를 보내드릴게요!</div>
       `],
       ['1:1 상담',`
-      1:1 상담을 희망하시는 경우, 우측 배너의 카카오톡 배너를 클릭하여 '콕강 카카오채널'로 문의주시기 바랍니다.<br><br>
-      상담 가능시간 : 월~금 11:00 ~ 20:00
+      1:1 상담을 희망하시는 경우, 우측 배너의 카카오톡 배너를 클릭하여 <span class="red">'콕강 카카오채널'</span>로 편하게 문의하세요. 여러분을 기다릴게요!<br><br>
+      상담 가능시간 : 월~금 11:00 ~ 20:00(공휴일 휴무)
       `],
     ];
     var faqtitle = document.querySelector('#faqtitle');
