@@ -85,14 +85,14 @@ window.onload = ()=>{
         var scrollTop = $(window).scrollTop();
         var newPosition;
         if(scrollTop<200){
-            newPosition = '200px';
+            newPosition = scrollTop+200+"px";
         } else{
 		newPosition = scrollTop + floatPosition + "px";
         }
 
 		$("#fixed-banner").stop().animate({
 			"top" : newPosition
-		}, 200);
+		}, 100);
 
     }).scroll();
     
