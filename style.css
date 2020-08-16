@@ -345,7 +345,7 @@ button.faqtab{background-color: transparent;border:0;outline:0;}
 #faqtext{
     padding-top: 10%;
     font-size:2vw;
-    min-height: 200px;
+    min-height: 150px;
 }
 #faqtext li{line-height: 1.5;}
 
@@ -423,11 +423,12 @@ button.faqtab{background-color: transparent;border:0;outline:0;}
 /* media query */
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    /* #fixed-banner{
-        position: fixed;
-        top: 30%;
+    #fixed-banner{
+        top: 150px;
         right:10px;
-        width:150px;
-        height: 300px;
-    } */
+        width:70px;
+        height: 150px;
+        font-size: x-small;
+    }
+    #sugang, #signup-banner{font-size:12px;}
   }
