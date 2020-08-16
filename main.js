@@ -85,7 +85,7 @@ window.onload = ()=>{
         var scrollTop = $(window).scrollTop();
         var newPosition;
         if(scrollTop<200){
-            newPosition = '100px';
+            newPosition = '200px';
         } else{
 		newPosition = scrollTop + floatPosition + "px";
         }
