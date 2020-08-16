@@ -100,7 +100,7 @@ html{font-size: 62.5%;}
 /* page 2 */
 #page2{
     padding-bottom: 0%;
-    background-color: #4851FE;
+    background-color: rgb(89, 89, 230);
 }
 #p2t1{
     position: relative;
